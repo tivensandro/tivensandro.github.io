@@ -1,0 +1,418 @@
+/* --- GLOBAL STYLES (The Foundation) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Clean, modern font */
+}
+/* This enables the buttery smooth gliding effect when you click a link */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Prevents the sticky navbar from covering your section titles when it scrolls */
+}
+/* --- NAVIGATION BAR --- */
+.navbar {
+    position: fixed; /* This makes it "sticky" */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgba(255, 255, 255, 0.90); /* Mostly white, slightly see-through */
+    backdrop-filter: blur(10px); /* Gives a modern frosted-glass blur over the background */
+    z-index: 1000; /* Ensures the navbar stays on top of everything else */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Soft line under the menu */
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.nav-links {
+    list-style: none; /* Removes bullet points */
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4A5568;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4A90E2; /* Turns blue when hovered */
+}
+
+/* The button inside the navbar */
+.nav-btn {
+    background-color: #4A90E2;
+    color: white !important; /* Overrides the normal link color */
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+}
+body {
+    background-color: #F4F7F6; /* Soft, grayish-blue background like the Wix template */
+    color: #2D3748; /* Soft black for easier reading */
+    line-height: 1.6;
+}
+
+/* --- HERO SECTION (Layout & Spacing) --- */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh; /* Takes up the full height of the screen */
+    padding: 0 10%; /* Gives nice breathing room on the sides */
+    background-color: #FFFFFF; /* White card feel */
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Very soft shadow */
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #1A202C;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+    color: #4A90E2; /* A nice, professional blue accent color */
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #718096;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #4A5568;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+/* --- BUTTONS (Interactivity & Hover Effects) --- */
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 8px; /* Soft rounded corners */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease; /* Makes the hover effect buttery smooth */
+}
+
+.primary-btn {
+    background-color: #4A90E2;
+    color: white;
+    border: 2px solid #4A90E2;
+}
+
+.primary-btn:hover {
+    background-color: #357ABD;
+    transform: translateY(-3px); /* Lifts the button up slightly when hovered */
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #4A90E2;
+    border: 2px solid #4A90E2;
+}
+
+.secondary-btn:hover {
+    background-color: #4A90E2;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* --- PROFILE IMAGE PLACEHOLDER --- */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- PROFILE IMAGE --- */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; /* This cuts your square photo into a perfect circle */
+    object-fit: cover; /* This is the magic rule! It ensures your face doesn't get stretched or squished */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border: 6px solid #FFFFFF; /* Gives it a really clean, premium white border */
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.02); /* Very subtle zoom when someone hovers over your photo */
+}
+/* --- CONTENT SECTIONS (Spacing & Typography) --- */
+.content-section {
+    padding: 80px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #1A202C;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* --- RESUME TIMELINE GRID --- */
+.resume-grid {
+    display: flex;
+    gap: 50px;
+}
+
+.resume-column {
+    flex: 1;
+}
+
+.resume-column h3 {
+    font-size: 1.8rem;
+    color: #4A90E2;
+    margin-bottom: 30px;
+}
+
+.resume-item {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #E2E8F0;
+    margin-bottom: 40px;
+}
+
+.item-dot {
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background-color: #4A90E2;
+    border-radius: 50%;
+    border: 3px solid #F4F7F6;
+}
+
+.resume-item h4 {
+    font-size: 1.3rem;
+    color: #2D3748;
+}
+
+.resume-item h5 {
+    font-size: 1rem;
+    color: #718096;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* --- PROJECT & PATENT CARDS --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.patent-badge {
+    background-color: #FEFCBF;
+    color: #B7791F;
+}
+
+.project-badge {
+    background-color: #EBF8FF;
+    color: #2B6CB0;
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* --- JAVASCRIPT ANIMATION STYLES --- */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* --- SKILLS SECTION --- */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    color: #4A90E2;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #E2E8F0;
+    padding-bottom: 10px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: #EDF2F7;
+    color: #2D3748;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default; /* Tells the user it's a tag, not a link */
+}
+
+/* Interactivity for the skill tags */
+.skill-tag:hover {
+    background-color: #4A90E2;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(74, 144, 226, 0.2);
+}
+
+/* --- CERTIFICATIONS SECTION (Light Background) --- */
+.cert-list {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 0 auto; /* Centers the box */
+}
+
+.cert-list ul {
+    list-style: none; /* Removes default bullet points */
+}
+
+.cert-list li {
+    margin-bottom: 25px;
+    color: #4A5568;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.cert-list strong {
+    color: #4A90E2; /* Professional blue accent */
+    display: block; /* Puts the bold title on its own line */
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* --- GET IN TOUCH SECTION (Dark Centered Banner) --- */
+.contact-section {
+    background-color: #2D3748;
+    color: white;
+    border-radius: 20px;
+    margin: 60px auto; 
+    padding: 60px 10%;
+    max-width: 800px; 
+    text-align: center; /* Centers all the text */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-section h3 {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #CBD5E0;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the links */
+    gap: 15px;
+}
+
+.contact-item {
+    color: #E2E8F0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.contact-item[href]:hover {
+    color: #63B3ED;
+}

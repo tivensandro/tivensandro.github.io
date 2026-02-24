@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">Tiven Sandro.</div>
+        <ul class="nav-links">
+            <li><a href="#resume">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact" class="nav-btn">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Hello, I'm <br><span>Tiven Sandro</span></h1>
+            <h2>Engineer & Data Scientist</h2>
+            <p>Combining 4 years of field engineering expertise at BMKG with advanced analytical skills to build impactful, data-driven solutions.</p>
+            
+            <div class="button-group">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <img src="tiven.jpeg" alt="Tiven Sandro - Engineer and Data Scientist" class="profile-pic">
+        </div>
+    </section>
+
+    <section id="resume" class="content-section hidden">
+        <h2 class="section-title">Experience & Education</h2>
+        
+        <div class="resume-grid">
+            <div class="resume-column">
+                <h3>Work Experience</h3>
+                <div class="resume-item">
+                    <div class="item-dot"></div>
+                    <h4>Engineer</h4>
+                    <h5>BMKG | 2020 - Present</h5>
+                    <p>Maintain, calibrate, and repair meteorological equipment across 50+ stations. Earned Outstanding Civil Servant awards for the G20 Events and Sunda Strait Mission.</p>
+                </div>
+            </div>
+
+            <div class="resume-column">
+                <h3>Education</h3>
+                <div class="resume-item">
+                    <div class="item-dot"></div>
+                    <h4>Master of Data Science</h4>
+                    <h5>University of Sydney | 2024 - 2025</h5>
+                    <p>GPA: 4.00/4.00</p>
+                </div>
+                <div class="resume-item">
+                    <div class="item-dot"></div>
+                    <h4>BASc in Instrumentation</h4>
+                    <h5>STMKG | 2015 - 2019</h5>
+                    <p>GPA: 3.63/4.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="content-section hidden">
+        <h2 class="section-title">Projects & Patents</h2>
+        
+        <div class="cards-grid">
+            <div class="card">
+                <span class="badge patent-badge">Patent</span>
+                <h4>Integrated Tsunami Early Warning Siren System</h4>
+                <p>Registered patent for an integrated early warning system design.</p>
+                <a href="https://paten.dgip.go.id/#/fp/53616c7465645f5f032e28f49dadc9b26f43f91a5fe4c4eaeb71f8271bb541c8" target="_blank" class="card-link">View Patent →</a>
+            </div>
+
+            <div class="card">
+                <span class="badge project-badge">ML Project</span>
+                <h4>Advanced Battery Modelling and Predictive Analytics</h4>
+                <p>Developed a machine learning pipeline to predict battery State of Health.</p>
+                <a href = "https://github.com/tivensandro/CS64-Capstone" target ="_blank" class ="card-link">View Project →</a>
+            </div>
+
+            <div class="card">
+                <span class="badge project-badge">Data Engineering</span>
+                <h4>Unified Analytics Pipeline</h4>
+                <p>End-to-end data analytics pipeline for processing and visualising large-scale datasets.</p>
+                <a href="https://github.com/tivensandro/COMP5399---Unified-Analytics-Pipeline" target ="_blank" class="card-link">View Project →</a>
+            </div>
+
+            <div class="card">
+                <span class="badge project-badge">ML Project</span>
+                <h4>Deep Learning Approach for Quality Assurance of Water Temperature Sensor</h4>
+                <p>Deep learning model for detecting anomalies in water temperature sensor.</p>
+                <a href="https://ieeexplore.ieee.org/abstract/document/10420632" target ="_blank" class="card-link">View Project →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="content-section hidden">
+        <h2 class="section-title">Tech Stack & Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL (MySQL, PostgreSQL)</span>
+                    <span class="skill-tag">R</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Data & ML Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">RStudio</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Cloud & Pipeline</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Google Cloud Platform</span>
+                    <span class="skill-tag">Airflow</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Analytics & General</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="content-section hidden">
+        <h2 class="section-title">Certifications & Awards</h2>
+        <div class="cert-list">
+            <ul>
+                <li><strong>Google Cloud Skill Boost (2025)</strong> Building Batch Data Pipelines, Modernizing Data Lakes</li>
+                <li><strong>Awards</strong> Best Civil Servant Achievement (G20 Events & Sunda Strait Mission)</li>
+                <li><strong>Languages</strong> Indonesian (Native), English (Fluent - IELTS 7.0)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section hidden contact-section">
+        <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>Ready to build data-driven solutions together? Let's connect!</p>
+            <div class="contact-links">
+                <a href="mailto:tivensandro@gmail.com" class="contact-item">📧 tivensandro@gmail.com</a>
+                <a href="https://www.linkedin.com/in/tiven-sandro-448438286" target="_blank" class="contact-item">🔗 LinkedIn Profile</a>
+                <span class="contact-item">📍 DKI Jakarta, Indonesia</span>
+                <span class="contact-item">📱 +62 812 8184 8949</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
