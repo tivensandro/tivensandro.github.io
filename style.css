@@ -416,3 +416,66 @@ body {
 .contact-item[href]:hover {
     color: #63B3ED;
 }
+/* --- MOBILE RESPONSIVE DESIGN (Phones & Small Tablets) --- */
+@media (max-width: 768px) {
+    /* 1. Stack the Navigation Bar */
+    .navbar {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    /* 2. Stack the Hero Section (Picture on top, text on bottom) */
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 140px 5% 40px; /* Extra top padding so the navbar doesn't cover your face */
+        margin: 0;
+        border-radius: 0;
+    }
+    .hero-content {
+        padding-right: 0;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem; /* Slightly smaller text for phones */
+    }
+    .button-group {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .profile-pic {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 25px;
+    }
+
+    /* 3. Stack the Experience Columns */
+    .resume-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* 4. Make Project Cards fill the screen */
+    .cards-grid {
+        grid-template-columns: 1fr; /* Forces 1 card per row */
+    }
+
+    /* 5. Adjust Spacing for smaller screens */
+    .content-section {
+        padding: 60px 5%;
+    }
+    
+    /* 6. Stack the Footer/Contact section */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-section {
+        padding: 40px 5%;
+        margin: 20px 5%;
+    }
+}
