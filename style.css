@@ -462,8 +462,11 @@ body {
 
     /* 4. Make Project Cards fill the screen */
     .cards-grid {
-        grid-template-columns: 1fr; /* Forces 1 card per row */
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
 
     /* 5. Adjust Spacing for smaller screens */
     .content-section {
